@@ -8,6 +8,10 @@
 
 Note: I used https://github.com/staudenmeir/laravel-adjacency-list for CTE
 
+## TODO
+-   Pagination component for frontend
+
+
 ## Installation
 
 - Downlaod or clone the repo.
