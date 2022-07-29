@@ -6,6 +6,8 @@
 -   Vuex 3
 -   Load comments from database with 2 options CTE OR NESTED
 
+Note: I used https://github.com/staudenmeir/laravel-adjacency-list for CTE
+
 ## Installation
 
 - Downlaod or clone the repo.
