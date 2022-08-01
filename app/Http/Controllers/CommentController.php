@@ -23,6 +23,7 @@ class CommentController extends Controller
     public function getComments($postId, CommentService $commentService)
     {
         $comments = $commentService->getComments($postId);
-        return response()->json(['comments' => $comments], 200);
+        count($comments) > 0 ? ($status = 200) : ($status = 204);
+        return response()->json(['comments' => $comments], $status);
     }
 }

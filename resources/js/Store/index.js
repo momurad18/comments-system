@@ -17,7 +17,7 @@ const store = new Vuex.Store({
     actions: {
         async getComments({ commit, state }, id) {
             const response = await axios.get(`/api/comments/${id}`);
-            commit("SET_COMMENTS", response.data.comments);
+            commit("SET_COMMENTS", response.data.comments || []);
             return state.comments;
         },
         async sendComment({ commit }, payload) {
